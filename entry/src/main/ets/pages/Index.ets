@@ -8,7 +8,7 @@ struct Index {
   @State message: string = 'Hello World';
 
   build() {
-    Column() {
+    Column({space: 20}) {
       Button('WebDemo')
         .onClick(() => {
           router.pushUrl({

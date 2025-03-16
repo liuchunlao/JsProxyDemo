@@ -1,4 +1,5 @@
 import { webview } from '@kit.ArkWeb';
+
 const TAG:string = 'PROXY::'
 
 class TestObj {
@@ -54,6 +55,7 @@ class AsyncObj {
 @Entry
 @Component
 struct WebDemoPage {
+  TAG: string = 'WEBDEMOPAGE::'
   @State isReigstered: boolean = false
   @State message: string = 'Hello World';
   controller: webview.WebviewController = new webview.WebviewController()
@@ -93,7 +95,7 @@ struct WebDemoPage {
         this.registerProxy()
       })
       Web({
-        src: $rawfile('index.html'),
+        src: $rawfile('index.html'),//$rawfile('index.html')
         controller: this.controller
       })
         .javaScriptAccess(true)
