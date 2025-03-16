@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/liucl/.ohos/config/default_JsProxyDemo_Bmxr8LJC2QxF3KhWH9vI2StI1XZ-rgei82pFnWivqYA=.cer",
+          "storePassword": "0000001B4168766A949E0B2E43B6572C40E0E908D5E6A013D92ACAF3376B5F02206809C1F4F2B427FDD89D",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B92CB011319238651BACE3141699EEDC995ADAF6E90D0D5B201EE7691BADAF38BACC91C68C802A6",
+          "profile": "/Users/liucl/.ohos/config/default_JsProxyDemo_Bmxr8LJC2QxF3KhWH9vI2StI1XZ-rgei82pFnWivqYA=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/liucl/.ohos/config/default_JsProxyDemo_Bmxr8LJC2QxF3KhWH9vI2StI1XZ-rgei82pFnWivqYA=.p12"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
