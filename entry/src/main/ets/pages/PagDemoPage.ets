@@ -34,7 +34,12 @@ struct PagDemoPage {
   }
 
   aboutToAppear(): void {
-    this.viewController.setComposition(this.file);
+    let bgFile = PAGFile.LoadFromAssets(this.manager, 'alertbg.pag')
+    this.file?.setStartTime(1000000)
+    this.file?.setDuration(2000000)
+    bgFile?.addLayer(this.file)
+
+    this.viewController.setComposition(bgFile);
     this.viewController.setRepeatCount(-1);
     this.viewController.play();
     this.viewController.addListener(new WeakRef(this.listener))
